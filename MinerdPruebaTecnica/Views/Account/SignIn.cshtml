@@ -1,0 +1,49 @@
+@using MinerdPruebaTecnica.ViewModels
+
+@model SignInViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutEmpty.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/SignIn.css" />
+
+<div class="form-container">
+    <form asp-action="SignIn" method="post" class="form d-flex flex-column justify-content-center">
+        <div class="">
+            <h1>Bienvenido</h1>
+            <p>Ingresar a tu cuenta.</p>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <span class="text-danger d-block">@ViewData["ErrorMessage"]</span>
+            <span asp-validation-for="Email" class="text-danger d-block"></span>
+            <span asp-validation-for="Password" class="text-danger d-block"></span>
+
+            <div class="input-container mt-3">
+                <i class="fas fa-envelope"></i>
+                <input type="email" asp-for="Email" placeholder="Correo" />
+            </div>
+
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" asp-for="Password" placeholder="Contraseña" />
+            </div>
+
+            <button type="submit">Ingresar.</button>
+        </div>
+    </form>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h2>¡Bienvenido De Nuevo!</h2>
+            <p>Prueba tecnica MINERD</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

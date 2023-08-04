@@ -1,0 +1,182 @@
+﻿/* ---- Global Styles ---- */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    background-color: #264653;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Form Container Styles */
+.form-container {
+    width: 80rem;
+    /*height: 50rem;*/
+    margin: auto;
+    border-radius: 3rem;
+    display: flex;
+    box-shadow: 0 .9rem 3.9rem -1.6rem rgba(0,0,0,0.57);
+}
+
+    /* Form Styles */
+    .form-container .form {
+        width: 40rem;
+        height: 100%;
+        padding: 3rem 5rem 0 5rem;
+        background-color: #FFF;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+    }
+
+        .form-container .form p {
+            text-align: center;
+            color: #212529;
+            margin-bottom: 0;
+        }
+
+/* Inputs */
+.input-container {
+    width: 100%;
+    border: 1px solid rgba(37,38,41,0.5);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+    .input-container .fas {
+        margin-left: 1.5rem;
+        color: rgba(37, 38, 41, 0.5);
+    }
+
+    .input-container input[type="text"],
+    .input-container input[type="email"],
+    .input-container input[type="password"],
+    .input-container input[type="tel"],
+    .input-tel {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 2.5rem;
+    }
+
+    .input-container input,
+    .input-tel {
+        outline: none !important;
+    }
+
+/* ----- Register / Login button ----- */
+.form button {
+    background-color: #21d4fd;
+    background-image: linear-gradient(90deg, #264653 0%, #2A9D8F 100%);
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 1rem 5rem;
+    border-radius: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.form input[type="submit"] {
+    cursor: pointer;
+}
+
+/* ----- To Login / To Register ----- */
+.go-to-login p, a, .go-to-register p, a {
+    font-size: 1.3rem;
+}
+
+/* ----- Hero ----- */
+.hero {
+    width: 40rem;
+    /*height: 100%;*/
+    background-color: #21d4fd;
+    background-image: linear-gradient(180deg, #264653 0%, #2A9D8F 100%);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+    .hero .hero-text {
+        color: #fff;
+        line-height: 1.5;
+    }
+
+.validation-message {
+    color: #E76F51;
+}
+
+/* SPINNER */
+.loader {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    color: #2A9D8F;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+    .loader::after,
+    .loader::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 0;
+        background-color: #2A9D8F;
+        border-radius: 50%;
+        animation: scale50 1s infinite ease-in-out;
+    }
+
+    .loader::before {
+        top: auto;
+        bottom: 0;
+        background-color: #264653;
+        animation-delay: 0.5s;
+    }
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scale50 {
+    0%, 100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}

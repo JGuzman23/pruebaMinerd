@@ -1,0 +1,46 @@
+﻿@using MinerdPruebaTecnica.Models
+
+@model Customer
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<h1 class="text-center text-capitalize text-danger">¿Estás seguro de que quieres eliminar este cliente?</h1>
+
+<div>
+    <hr />
+    @if (ViewData["ErrorMessage"] != null)
+    {
+        <label class="text-danger">
+            @ViewData["ErrorMessage"]
+        </label>
+    }
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <div class="row">
+            <div class="col">
+                <input type="submit" value="Eliminar" class="btn btn-danger w-100" />
+            </div>
+            <div class="col">
+                <a class="btn btn-primary w-100" asp-action="Index">Ir a la lista</a>
+            </div>
+        </div>
+    </form>
+</div>
+

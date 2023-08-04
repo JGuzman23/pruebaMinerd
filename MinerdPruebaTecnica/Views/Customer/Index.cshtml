@@ -1,0 +1,114 @@
+@using MinerdPruebaTecnica.Models
+
+@model IEnumerable<Customer>
+
+@{ ViewData["Title"] = "Inicio"; }
+
+<h1 class="text-center text-capitalize">Usuarios</h1>
+
+<p>
+  <a class="btn btn-success" asp-action="Create">Crear Nuevo</a>
+</p>
+
+<form asp-action="Index">
+  <div class="row mb-1">
+    <div class="col-4">
+      <input class=form-control type="text" name="SearchText" placeholder="Buscar por Nombre" />
+    </div>
+    <div class="col-2">
+      <input class="btn btn-primary w-100" type="submit" value="Buscar" />
+    </div>
+    
+  </div>
+  <div class="row mb-2" style="justify-content:end">
+    <div class="col-2">
+      <input class="btn btn-success w-100" type="button" onclick="reporte()" value="Reporte: CSV" />
+    </div>
+  </div>
+</form>
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th class="text-center">
+        @Html.DisplayNameFor(model => model.Name)
+      </th>
+      <th class="text-center">
+        @Html.DisplayNameFor(model => model.Apellido)
+      </th>
+      <th class="text-center">
+        @Html.DisplayNameFor(model => model.Cedula)
+      </th>
+      <th class="text-center">
+        @Html.DisplayNameFor(model => model.Telefono)
+      </th>
+
+      <th class="text-center">
+        @Html.DisplayNameFor(model => model.CreatedAt)
+      </th>
+      <th class="text-center">
+        Acciones
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+<tr >
+  <td class="text-center">
+    @Html.DisplayFor(modelItem => item.Name)
+  </td>
+  <td class="text-center">
+    @Html.DisplayFor(modelItem => item.Apellido)
+  </td>
+  <td class="text-center">
+    @Html.DisplayFor(modelItem => item.Cedula)
+  </td>
+  <td class="text-center">
+    @Html.DisplayFor(modelItem => item.Telefono)
+  </td>
+
+  <td class="text-center">
+    @Html.DisplayFor(modelItem => item.CreatedAt)
+  </td>
+  <td class="text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.ID">Editar</a>
+      <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.ID">Detalles</a>
+      <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ID">Eliminar</a>
+    </div>
+  </td>
+</tr>}
+  </tbody>
+</table>
+
+<script>
+
+  function reporte() {
+
+    var data = @Html.Raw(Json.Serialize(Model));
+
+    var csv = 'Nombre,Apellido,Cedula,Telefono\n';
+
+    data.forEach(function (row) {
+
+      
+
+      
+      
+      csv += row.name + ',' + row.apellido + row.cedula + ',' + row.telefono + '\n'
+
+      
+
+    });
+
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+    hiddenElement.target = '_blank';
+
+    //provide the name for the CSV file to be downloaded
+    hiddenElement.download = 'PermissionList.csv';
+    hiddenElement.click();
+
+  }
+</script>

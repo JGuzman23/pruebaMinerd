@@ -1,0 +1,12 @@
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\bin\Debug\net5.0\MinerdPruebaTecnica.ViewModel.deps.json
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\bin\Debug\net5.0\MinerdPruebaTecnica.ViewModel.dll
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\bin\Debug\net5.0\ref\MinerdPruebaTecnica.ViewModel.dll
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\bin\Debug\net5.0\MinerdPruebaTecnica.ViewModel.pdb
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.csproj.AssemblyReference.cache
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.AssemblyInfoInputs.cache
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.AssemblyInfo.cs
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.dll
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\ref\MinerdPruebaTecnica.ViewModel.dll
+C:\Users\kelvi\OneDrive\Escritorio\SasejApp\MinerdPruebaTecnica\MinerdPruebaTecnica.ViewModel\obj\Debug\net5.0\MinerdPruebaTecnica.ViewModel.pdb

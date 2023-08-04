@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "F5GKVdHtGn2gDGKIK61/O5IVW8hwPM9cvOuJit7yO4g0uZz4qVo1IzboR9uGO4LXEAvKhfIUQw8LrrrX9aNkaw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kelvi\\OneDrive\\Escritorio\\SasejApp\\MinerdPruebaTecnica\\MinerdPruebaTecnica.Utils\\MinerdPruebaTecnica.Utils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kelvi\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
